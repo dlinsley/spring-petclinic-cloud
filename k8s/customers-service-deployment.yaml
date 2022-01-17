@@ -12,7 +12,6 @@ spec:
   selector:
     matchLabels:
       app: customers-service
-  strategy: {}
   template:
     metadata:
       labels:
@@ -59,6 +58,4 @@ spec:
           value: proxy://wavefront-proxy.spring-petclinic.svc.cluster.local:2878
         ports:
         - containerPort: 8080
-        resources: {}
       restartPolicy: Always
-status: {}
